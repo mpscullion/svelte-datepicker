@@ -83,6 +83,7 @@
   <div class="month-selector" class:open={monthSelectorOpen}>
       {#each availableMonths as monthDefinition, index}
         <button 
+          type="button"
           class="month-selector--month" 
           class:selected={index === $displayedDate.month()}
           disabled={!monthDefinition.selectable}
